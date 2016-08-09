@@ -58,8 +58,8 @@ module EPP
   end
 
   module Contact
-    NAMESPACE       = 'urn:ietf:params:xml:ns:contact-1.0'
-    SCHEMA_LOCATION = 'urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd'
+    NAMESPACE       = 'urn:ietf:params:xml:ns:contact-1.6'
+    SCHEMA_LOCATION = 'urn:ietf:params:xml:ns:contact-1.6 contact-1.6.xsd'
 
     autoload :Check,    File.expand_path('../epp-client/contact/check.rb',     __FILE__)
     autoload :Create,   File.expand_path('../epp-client/contact/create.rb',    __FILE__)
