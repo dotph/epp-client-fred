@@ -3,7 +3,7 @@ require File.expand_path('../command', __FILE__)
 module EPP
   module Domain
     class Update < Command
-      ADD_REM_ORDER = [:ns, :contact, :status]
+      ADD_REM_ORDER = [:admin, :contact, :status]
       CHG_ORDER     = [:registrant, :auth_info]
 
 
@@ -42,7 +42,7 @@ module EPP
           CHG_ORDER.each do |key|
             value = @chg[key]
             next if value.nil?
-            
+
             case key
             when :registrant
               chg << domain_node('registrant', value)
@@ -51,7 +51,7 @@ module EPP
             end
           end
         end
-        
+
         node
       end
 
@@ -62,7 +62,7 @@ module EPP
             next if value.nil? || value.empty?
 
             case key
-            when :ns
+            when :admin
               node << nameservers_to_xml(value)
             when :contact
               contacts_to_xml(node, value)

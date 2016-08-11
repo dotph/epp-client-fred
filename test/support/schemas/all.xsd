@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <schema targetNamespace="epp:client:test:schema"
     xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"

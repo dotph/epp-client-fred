@@ -37,8 +37,8 @@ module EPP
   end
 
   module Domain
-    NAMESPACE       = 'urn:ietf:params:xml:ns:domain-1.0'
-    SCHEMA_LOCATION = 'urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd'
+    NAMESPACE       = "http://www.nic.cz/xml/epp/domain-1.4"
+    SCHEMA_LOCATION = "http://www.nic.cz/xml/epp/domain-1.4 domain-1.4.xsd"
 
     autoload :Check,    File.expand_path('../epp-client/domain/check.rb',     __FILE__)
     autoload :Create,   File.expand_path('../epp-client/domain/create.rb',    __FILE__)
@@ -58,8 +58,8 @@ module EPP
   end
 
   module Contact
-    NAMESPACE       = 'urn:ietf:params:xml:ns:contact-1.6'
-    SCHEMA_LOCATION = 'urn:ietf:params:xml:ns:contact-1.6 contact-1.6.xsd'
+    NAMESPACE       = "http://www.nic.cz/xml/epp/contact-1.6"
+    SCHEMA_LOCATION = "http://www.nic.cz/xml/epp/contact-1.6 contact-1.6.xsd"
 
     autoload :Check,    File.expand_path('../epp-client/contact/check.rb',     __FILE__)
     autoload :Create,   File.expand_path('../epp-client/contact/create.rb',    __FILE__)
